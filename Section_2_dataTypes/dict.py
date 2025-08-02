@@ -30,3 +30,9 @@ removed_age = person.pop("age")
 print(removed_age) # Output: 31
 print(person)      # Output: {'name': 'Alice', 'city': 'New York', 'email': 'alice@example.com'}
 
+# Deleting
+my_dict = {'name': 'Bob', 'age': 25, 'city': 'London'}
+print(my_dict) # Output: {'name': 'Bob', 'age': 25, 'city': 'London'}
+
+del my_dict['age']
+print(my_dict) # Output: {'name': 'Bob', 'city': 'London'}
