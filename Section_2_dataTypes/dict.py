@@ -1,0 +1,23 @@
+# Create a dictionary
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+
+# Access a value using its key
+print(person["name"])  # Output: Alice
+
+# Add a new key-value pair
+person["email"] = "alice@example.com"
+print(person) # Output: {'name': 'Alice', 'age': 30, 'city': 'New York', 'email': 'alice@example.com'}
+
+# Modify an existing value
+person["age"] = 31
+print(person["age"]) # Output: 31
+
+# Print all keys
+print(person.keys())  # Output: dict_keys(['name', 'age', 'city', 'email'])
+# Print all items
+print(person.values()) # Output: dict_values(['Alice', 31, 'New York', 'alice@example.com'])
+
