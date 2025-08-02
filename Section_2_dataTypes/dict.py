@@ -25,7 +25,7 @@ print(person.values()) # Output: dict_values(['Alice', 31, 'New York', 'alice@ex
 country = person.get("country", "404 not found")
 print(country) # Output: Unknown
 
-# Popping 
+# Popping any item
 removed_age = person.pop("age")
 print(removed_age) # Output: 31
 print(person)      # Output: {'name': 'Alice', 'city': 'New York', 'email': 'alice@example.com'}
@@ -33,6 +33,12 @@ print(person)      # Output: {'name': 'Alice', 'city': 'New York', 'email': 'ali
 # Deleting
 my_dict = {'name': 'Bob', 'age': 25, 'city': 'London'}
 print(my_dict) # Output: {'name': 'Bob', 'age': 25, 'city': 'London'}
-
 del my_dict['age']
 print(my_dict) # Output: {'name': 'Bob', 'city': 'London'}
+
+#Popping last item
+my_dict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+# Remove and retrieve the last item
+last_item = my_dict.popitem()
+print(f"Removed item: {last_item}")
+print(f"Updated dictionary: {my_dict}")
