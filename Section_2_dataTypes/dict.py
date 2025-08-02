@@ -20,4 +20,7 @@ print(person["age"]) # Output: 31
 print(person.keys())  # Output: dict_keys(['name', 'age', 'city', 'email'])
 # Print all items
 print(person.values()) # Output: dict_values(['Alice', 31, 'New York', 'alice@example.com'])
+# Key 'country' does not exist, Safely retrieving via get()
+country = person.get("country", "404 not found")
+print(country) # Output: Unknown
 
