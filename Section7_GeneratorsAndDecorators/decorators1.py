@@ -2,6 +2,9 @@
 # returns a new function that usually extends or modifies the behavior of the original 
 # function — without actually changing its code.
 
+# During definition - decoratorFunction is called, returning wrappedFunction as an object
+# During call of decorated function - The returned wrappedFunction gets called, decoratorFunction
+# doesn't gets called.
 
 from functools import wraps
 
@@ -23,5 +26,5 @@ printHello()
 
 # Name and other metadata changes of the function we decorate
 print(f"Function Name after passing it to decorator function: {printHello.__name__}")
-# Output : wrappedFunction
+# Output : wrappedFunction if @wraps is not used
 
