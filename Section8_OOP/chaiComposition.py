@@ -24,12 +24,16 @@ class ChaiShop:
         print(f"Serving {self.chai.type} chai in the shop")
         self.chai.prepare()
 
+
+
+# Combining Inheritance and Composition - FancyChaiShop "is-a" ChaiShop and "has-a" MasalaChai
 class FancyChaiShop(ChaiShop):
     chai_cls = MasalaChai
 
-
+# Creating objects of classes
 shop = ChaiShop()
 fancy = FancyChaiShop()
-shop.serve()
-fancy.serve()
+
+shop.serve() # OUTPUT: Serving Regular Chai in the shop, Preparing Regular Chai....
+fancy.serve() # OUTPUT: Serving Regular Chai in the shop, Preparing Regular Chai....
 fancy.chai.add_spices()
