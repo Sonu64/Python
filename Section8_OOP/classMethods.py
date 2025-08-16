@@ -25,15 +25,17 @@ class ChaiOrder:
 
 order1 = ChaiOrder.fromDict({"teaType":"Masala","sweetness":"Medium", "size":"Large"})
 order2 = ChaiOrder.fromString("Ginger, Low, Small")
+order3 = ChaiOrder("Kesar", "Medium", "Large")
 
-print(order1.describeOrder())
-print(order2.describeOrder())
+# print(order1.describeOrder())
+# print(order2.describeOrder())
 
 # Using available dunders on the objects
 
-#__dict__ to show the passed properties in dictionary format
+#__dict__ to show the passed properties in dictionary (key-value) format
 print(f"Order 1 Properties: {order1.__dict__}")
 print(f"Order 2 Properties: {order2.__dict__}")
+print(f"Order 3 Properties: {order3.__dict__}")
 
 
 
