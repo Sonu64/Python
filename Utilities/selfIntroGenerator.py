@@ -8,6 +8,6 @@ hobby = input("Enter your hobby: ").strip()
 
 output = f"""Hello, my name is {name}. I am {age} years old and live in {city}.
 I work as a {proffession} and I absolutely enjoy {hobby} during my free time."""
-
-print(output)
-print(f"Logged in On: {date.today()}")
+loginInfo = f"Logged in On: {date.today()}"
+border = "*" * 50
+print(f"\n{border}\n{output}\n\n{loginInfo}\n{border}\n")
