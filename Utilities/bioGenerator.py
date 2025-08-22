@@ -1,3 +1,5 @@
+print("\n*********** STYLISH-BIO GENERATOR ***********")
+
 name = input("Name: ").strip()
 profession = input("Profession: ").strip()
 passion = input("One-Liner Passion or Goal: ").strip()
