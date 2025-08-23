@@ -20,9 +20,9 @@ def getFloat(prompt):
 
 choice = "y"
 while choice == "y":
-    age = getFloat("Enter your age: ")
+    age = getFloat("\nEnter your age: ")
     days, hours, mins = calculateMins(age)
-    print("\n","*"*40)
+    print("*"*40)
     print("You are - ")
     print(f"{days} Days, {hours} Hours and {mins} Minutes Old")
 
@@ -30,4 +30,4 @@ while choice == "y":
     while choice != "y" and choice != "n":
         choice = input("\nPlease enter Valid choice ? (y/n): ").strip().lower()
 
-print("\n","*"*40)
+print("*"*40)
