@@ -14,9 +14,12 @@ def getFloat(prompt):
     while True:
         try:
             return float(input(prompt))
-        except ValueError as e:
+        except TypeError as e:
+            print("Error !")
             print(e)
-            return
+        except ValueError as e:
+            print("ValueError")
+            print(e)
 
 choice = "y"
 while choice == "y":
