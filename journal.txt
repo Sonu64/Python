@@ -1,0 +1,4 @@
+
+Date: 2025-08-26 - 11:14 AM
+Productivity rating: 3.7
+Worked on my Small Game, though imperfect, I added Terrains, Hills, SoundFX. Also did the course but had to leave the course after my spaceship was behaving weird on applying Quaternior.Lerp().
