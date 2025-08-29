@@ -23,8 +23,8 @@ def saveTasks(tasks):
                 status = "done"
             else:
                 status = "not_done"
-            f.write(f"Task: {taskName} || Status: {status}")
-
+            f.write(f"{taskName} || {status}\n")
+            # Syntax in file: TASKNAME || STATUS in each line
 
 
 
