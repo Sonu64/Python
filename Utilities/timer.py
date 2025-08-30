@@ -3,6 +3,11 @@
 # subsequent output to overwrite the text that was already on that line
 
 
+# :02 -> This is a format specifier. The 0 means to pad the number with a leading zero if it is a single digit, 
+# and the 2 specifies the total width of the field. 
+# For example, if mins is 5, it will be formatted as 05. If it's 12, it will be 12
+
+
 import time
 
 while True:
